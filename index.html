@@ -11,10 +11,10 @@
 <div id="yesFields"><div class="field"><label class="legend" for="companion">Nombre de tu acompañante (si está invitado/a)</label><input id="companion" name="acompanante" placeholder="Opcional" type="text"/><div class="small">Por favor, incluye solo acompañantes contemplados en la invitación.</div></div>
 <div class="field"><label class="legend" for="food">Preferencia alimentaria</label><select id="food" name="alimentacion"><option value="Sin restricciones">Sin restricciones</option><option>Vegetariana</option><option>Vegana</option><option>Celíaca / sin gluten</option><option>Otra</option></select></div>
 <div class="field"><label class="legend" for="foodComp">Preferencia alimentaria de tu acompañante</label><select id="foodComp" name="alimentacion_acompanante"><option value="">No aplica</option><option>Sin restricciones</option><option>Vegetariana</option><option>Vegana</option><option>Celíaca / sin gluten</option><option>Otra</option></select></div><div class="field"><label class="legend" for="allergies">Alergias u observaciones importantes</label><textarea id="allergies" name="alergias" placeholder="Opcional"></textarea></div></div>
-<div class="field"><label class="legend" for="message">¿Qué canción no puede faltar o qué mensaje nos dejarías?</label><textarea id="message" name="mensaje" placeholder="Opcional"></textarea></div><button class="submit" disabled="disabled" id="submitBtn" type="submit">Enviar confirmación</button><div id="status" role="status"></div></form></main>
+<div class="field"><label class="legend" for="message">¿Qué canción no puede faltar o qué mensaje nos dejarías?</label><textarea id="message" name="mensaje" placeholder="Opcional"></textarea></div><button class="submit" id="submitBtn" type="submit">Enviar confirmación</button><div id="status" role="status"></div></form></main>
 <footer class="foot"><div id="footerNames">CATA Y CRIS</div><p id="footerDate"></p></footer>
 <script>(() => {
-const ENDPOINT = "";
+const ENDPOINT = "https://formspree.io/f/xppdobzz";
 const $ = id => document.getElementById(id);
 const form = $('rsvpForm');
 const btn = $('submitBtn');
